@@ -3,19 +3,19 @@
 <head>
 <title>This will be annoying!</title>
 <script>
-function repeat() {
-  return "<h1>SOMEBODY ONCE TOLD ME THE WORLD IS GONNA ROLL ME!</h1>"/
-    }
-    return string;
-}
-</script>
-</head>
+<p id="demo"></p>
 
-<body>
 <script>
-document.write(repeat(5))
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+    text += "SOMEBODY ONCE TOLD ME THE WORLD IS GONNA ROLL ME!" + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
 </script>
     <br>
     <a href="index.html">Home</a>
 </body>
 </html>
+
+//SOMEBODY ONCE TOLD ME THE WORLD IS GONNA ROLL ME!
