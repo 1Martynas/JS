@@ -3,15 +3,20 @@
 <head>
 <title>This will be annoying!</title>
 <script>
-<p id="demo"></p>
-
-<script>
-var text = "";
-var i;
-for (i = 0; i < 10; i++) {
-    text += "SOMEBODY ONCE TOLD ME THE WORLD IS GONNA ROLL ME!" + i + "<br>";
+function laugh(num) {
+    var ha='';
+    for(var i=0;i<num;i=i+1) {
+        ha+="ha";
+        string=ha+"!";
+    }
+    return string;
 }
-document.getElementById("demo").innerHTML = text;
+</script>
+</head>
+
+<body>
+<script>
+document.write(laugh( 4 ))
 </script>
     <br>
     <a href="index.html">Home</a>
