@@ -3,3 +3,23 @@
 <head>
 
 <script>
+function repeatMe(){
+  var val = document.getElementById('inputField').value;
+  document.getElementById('result').innerHTML = "You typed: "+val;
+}
+</script>
+</head>
+  
+<body>
+<h1>Input and output</h1>
+ <p>Please write your name in the box below. Here \|/</p>
+  
+<input type="text" id="inputField">
+  <button onclick="repeatMe()">Please press here</button>
+  
+  <p>Look here!</p>
+<div id="result">
+  
+  </div>
+  </body>
+  </html>
