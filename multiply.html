@@ -5,14 +5,24 @@
 <script>
 function repeatMe(){
   var val = document.getElementById('inputField').value;
-  document.getElementById('result').innerHTML = "text i want + "+val;
+  document.getElementById('result').innerHTML = val;
 }
 </script>
 </head>
 
 <body>
-
-    <br>
+<h1>Ten times more</h1>
+ <p>I,ll show you a trick, just type something...</p>
+  
+<input type="text" id="inputField">
+  <button onclick="repeatMe()">See the magic happen!</button>
+  
+  <p>Look here!</p>
+<div id="result">
+  
+  </div>
+  <br>
+  <br>
     <a href="index.html">Home</a>
 </body>
 </html>
