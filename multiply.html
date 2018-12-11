@@ -7,14 +7,6 @@ function repeatMe(num){
   var val = document.getElementById('inputField').value;
   document.getElementById('result').innerHTML = val;
 }
-  function repeatStringNumTimes(string, times) {
-  if(times < 0) 
-    return "";
-  if(times === 1) 
-    return string;
-  else 
-    return string + repeatStringNumTimes(string, times - 1);
-}
 </script>
 </head>
 
@@ -26,9 +18,9 @@ function repeatMe(num){
   <button onclick="repeatMe(10)">See the magic happen!</button>
   
   <p>WOW!!!</p>
-repeatStringNumTimes("<div id="result">
+<div id="result">
   
-  </div>", 3);
+  </div>
   <br>
   <br>
     <a href="index.html">Home</a>
