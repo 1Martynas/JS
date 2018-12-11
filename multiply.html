@@ -3,7 +3,7 @@
 <head>
 <title>Multiply</title>
 <script>
-function repeatMe(){
+function repeatMe(num){
   var val = document.getElementById('inputField').value;
   document.getElementById('result').innerHTML = val;
 }
@@ -15,7 +15,7 @@ function repeatMe(){
  <p>I,ll show you a trick, just type something...</p>
   
 <input type="text" id="inputField">
-  <button onclick="repeatMe()">See the magic happen!</button>
+  <button onclick="repeatMe(10)">See the magic happen!</button>
   
   <p>WOW!!!</p>
 <div id="result">
