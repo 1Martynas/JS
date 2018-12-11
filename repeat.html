@@ -2,30 +2,16 @@
 <html>
 <head>
 <title>This will be annoying!</title>
-  <script>
-function repeatStringNumTimes(string, times) {
-  if(times < 0) 
-    return "";
-  if(times === 1) 
-    return string;
-  else 
-    return string + repeatStringNumTimes(string, times - 1);
-}
-  </script>  
-</head>
-
-<body>
-<script>
-repeatStringNumTimes("abc", 3);
-</script>
-    <br>
-    <br>
-    <br>
-<script>
- function repeate(func, times) {
+    function repeate(func, times) {
     func();
     --times && repeate(func, times);
 }
+</head>
+
+<body>
+
+<script>
+
 
 repeate(function () { document.write('Set them free!!! '); }, 5);
 </script><br>
