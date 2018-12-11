@@ -2,37 +2,37 @@
 <html>
 <head>
 <title>This will be annoying!</title>
-<script>
-function sing(num) {
-    var HALELUJAHHHHH='';
-    for(var i=0;i<num;i=i+1) {
-        HALELUJAHHHHH+="HALELUJAHHHHH";
-        string=HALELUJAHHHHH+"!";
-    }
-    return string;
-}
-</script>
+  <script>
+function repeattimes(string, times){
+    if (times>0){
+        return string.repeat(times);}
+    else{  return " ";  }   }
+  </script>  
 </head>
 
 <body>
 <script>
-document.write(sing( 5 ))
+repeattimes("Ready", 10);
 </script>
+    <br>
+    <br>
+    <br>
 <script>
- function repeat(func, times) {
+ function repeate(func, times) {
     func();
-    --times && repeat(func, times);
+    --times && repeate(func, times);
 }
 
-repeat(function () { document.write('Set them free!!! '); }, 5);
+repeate(function () { document.write('Set them free!!! '); }, 5);
 </script><br>
 
     <br>
     <a href="index.html">Home</a>
-  <script>
-      var tekstas = "Labas vakaras";
-console.log(tekstas.repeat(10));
-  </script>  
+    <br>
+    <br>
+    <br>
+
+  
 </body>
 </html>
 
