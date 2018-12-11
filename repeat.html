@@ -3,16 +3,20 @@
 <head>
 <title>This will be annoying!</title>
   <script>
-function repeattimes(string, times){
-    if (times>0){
-        return string.repeat(times);}
-    else{  return " ";  }   }
+function repeatStringNumTimes(string, times) {
+  if(times < 0) 
+    return "";
+  if(times === 1) 
+    return string;
+  else 
+    return string + repeatStringNumTimes(string, times - 1);
+}
   </script>  
 </head>
 
 <body>
 <script>
-repeattimes("Ready", 10);
+repeatStringNumTimes("abc", 3);
 </script>
     <br>
     <br>
